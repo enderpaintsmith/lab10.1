@@ -1,17 +1,70 @@
-# React + Vite
+# Lab 10.1 – React Counter with useEffect
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Overview
 
-Currently, two official plugins are available:
+An interactive counter application built with React and Vite. This project demonstrates React state management with `useState` and side effects with `useEffect`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application supports incrementing and decrementing a counter, tracking count history, customizing step values, and saving counter changes to localStorage.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Increment & Decrement:** Increase or decrease the counter by a selected step value.
+- **Custom Step Value:** Choose how much the counter changes with each action.
+- **Count History:** Track previous counter values as they change.
+- **Keyboard Controls:** Use the ArrowUp and ArrowDown keys to control the counter.
+- **Automatic Saving:** Save counter changes to localStorage.
+- **Reset:** Return the counter to zero and clear the history.
 
-## Expanding the Oxlint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# lab10.1
+- React
+- JavaScript
+- Vite
+- CSS
+- Browser localStorage
+
+## React Concepts Practiced
+
+- `useState` for managing counter, history, step, and save-status state.
+- `useEffect` for handling side effects.
+- Effect cleanup functions to clear pending timeouts and remove event listeners.
+- Event handling for button clicks, input changes, and keyboard interactions.
+- Rendering dynamic content from component state.
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/enderpaintsmith/lab10.1.git
+```
+
+Navigate into the project directory:
+
+```bash
+cd lab10.1
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+## Project
+
+Created as part of the Per Scholas 2026 RTT-44 Full-Stack Development program.
